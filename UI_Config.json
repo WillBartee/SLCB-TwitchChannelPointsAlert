@@ -11,7 +11,7 @@
 		"value": "",
 		"label": "Title of Twitch Reward",
 		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1ActivationType": {
 		"type": "dropdown",
@@ -23,14 +23,14 @@
 			"On Reward Queue Accept/Reject",
 			"Both"
 		],
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1ImageFile": {
 		"type": "textbox",
 		"value": "",
 		"label": "Path to Alert Image file",
 		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1TransitionType": {
 		"type": "dropdown",
@@ -38,7 +38,7 @@
 		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
 		"label": "In Transition",
 		"tooltip": "Set how the counter transitions in",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1ExpandDirection": {
 		"type": "dropdown",
@@ -46,7 +46,7 @@
 		"items": ["center","right","left"],
 		"label": "Text expand direction",
 		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1AlignVertical": {
 		"type": "slider",
@@ -56,7 +56,7 @@
 		"max": 100,
 		"ticks": 1,
 		"tooltip": "Align the text in the window, 50% is the middle of the window",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1AlignHorizontal": {
 		"type": "slider",
@@ -66,21 +66,21 @@
 		"max": 100,
 		"ticks": 1,
 		"tooltip": "Align the text in the window, 50% is the middle of the window",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1Color": {
 		"type": "colorpicker",
 		"label": "Text Color",
 		"value": "rgba(255,0,7,1)",
 		"tooltip": "",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1SFXFile": {
 		"type": "textbox",
 		"value": "",
 		"label": "SFX file",
 		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1Volume": {
 		"type": "slider",
@@ -90,21 +90,1421 @@
 		"max": 100,
 		"ticks": 1,
 		"tooltip": "Specify the volume to the SFX effect to trigger.",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1Font": {
 		"type": "textbox",
 		"value": "Bold 70px Bangers",
 		"label": "Font Style",
 		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
 	},
 	"Reward1Duration": {
 		"type": "numberbox",
 		"label": "Duration",
 		"value": 5,
 		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
-		"group": "Twitch Reward 1 Event"
+		"group": "Twitch Reward1 Event"
+	},
+	"Reward2Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward2Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward2 Event"
+	},
+	"Reward3Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward3Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward3 Event"
+	},
+	"Reward4Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward4Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward4 Event"
+	},
+	"Reward5Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward5Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward5 Event"
+	},
+	"Reward6Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward6Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward6 Event"
+	},
+	"Reward7Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward7Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward7 Event"
+	},
+	"Reward8Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward8Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward8 Event"
+	},
+	"Reward9Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward9Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward9 Event"
+	},
+	"Reward10Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward10Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward10 Event"
+	},
+	"Reward11Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward11Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward11 Event"
+	},
+	"Reward12Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward12Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward12 Event"
+	},
+	"Reward13Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward13Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward13 Event"
+	},
+	"Reward14Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward14Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward14 Event"
+	},
+	"Reward15Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward15 Event"
+	},
+	"Reward15Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward15 Event"
 	},
 	"btnreadme": {
 		"type": "button",

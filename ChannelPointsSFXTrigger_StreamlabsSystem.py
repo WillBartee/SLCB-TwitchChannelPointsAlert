@@ -41,7 +41,7 @@ ThreadQueue = []
 CurrentThread = None
 PlayNextAt = datetime.datetime.now()
 Sounds = {}
-RewardCount = 1
+RewardCount = 15
 WSEventName = ""
 
 #---------------------------------------
