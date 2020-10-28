@@ -1,0 +1,189 @@
+{
+	"output_file": "settings.json",
+	"WSEventName": {
+		"type": "textbox",
+		"value": "TwitchChannelPointsRedemptionAlert",
+		"label": "Unique Key for the Alert Websocket Event",
+		"tooltip": "Specify a unique name to identify this websocket event type."
+	},
+	"Reward1Name": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1ActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1ImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1TransitionType": {
+		"type": "dropdown",
+		"value": "SlideRight",
+		"items": ["SlideUp","SlideDown","SlideLeft","SlideRight","Fade","Bounce", "Scale", "AlwaysShow"],
+		"label": "In Transition",
+		"tooltip": "Set how the counter transitions in",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1ExpandDirection": {
+		"type": "dropdown",
+		"value": "center",
+		"items": ["center","right","left"],
+		"label": "Text expand direction",
+		"tooltip": "Determineds in what direction the number/text expand when getting bigger, 9 to 10 or 99 to 100 etc",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1AlignVertical": {
+		"type": "slider",
+		"label": "Align Vertical",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1AlignHorizontal": {
+		"type": "slider",
+		"label": "Align Horisontal",
+		"value": 50,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Align the text in the window, 50% is the middle of the window",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1Color": {
+		"type": "colorpicker",
+		"label": "Text Color",
+		"value": "rgba(255,0,7,1)",
+		"tooltip": "",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1SFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "SFX file",
+		"tooltip": "Specify the SFX file to play on trigger. (include the file extension)",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1Volume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1Font": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Twitch Reward 1 Event"
+	},
+	"Reward1Duration": {
+		"type": "numberbox",
+		"label": "Duration",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next alert in queue after starting to play this alert.",
+		"group": "Twitch Reward 1 Event"
+	},
+	"btnreadme": {
+		"type": "button",
+		"label": "Open ReadMe",
+		"tooltip": "Open ReadMe file",
+		"function": "OpenReadMe",
+		"wsevent": "EVENT_NONE",
+		"group": ""
+	},
+	"RewardTestName": {
+		"type": "textbox",
+		"value": "",
+		"label": "Title of Twitch Reward",
+		"tooltip": "Specify the name of the Twitch Reward that will trigger this event when detected.",
+		"group": "Test Alert"
+	},
+	"RewardTestActivationType": {
+		"type": "dropdown",
+		"label": "Activation Point",
+		"value": "Immediate",
+		"tooltip": "Set whether the reward should be triggered immediately on reward redemption by viewer, or when the reward is accepted/rejected from the reward queue. Note: twitch currently doesn't return a way to distinguish between Accept or Reject so Reject will still trigger the reward.",
+		"items": [
+			"Immediate",
+			"On Reward Queue Accept/Reject",
+			"Both"
+		],
+		"group": "Test Alert"
+	},
+	"RewardTestImageFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to Alert Image file",
+		"tooltip": "Specify the path to the Alert Image to trigger (Include file extension).",
+		"group": "Test Alert"
+	},
+	"RewardTestSFXFile": {
+		"type": "textbox",
+		"value": "",
+		"label": "Path to SFX file",
+		"tooltip": "Specify the path to the SFX effect to trigger. (Do not include the file extension)",
+		"group": "Test Alert"
+	},
+	"RewardTestVolume": {
+		"type": "slider",
+		"label": "SFX Volume",
+		"value": 100,
+		"min": 0,
+		"max": 100,
+		"ticks": 1,
+		"tooltip": "Specify the volume to the SFX effect to trigger.",
+		"group": "Test Alert"
+	},
+	"RewardTestFont": {
+		"type": "textbox",
+		"value": "Bold 70px Bangers",
+		"label": "Font Style",
+		"tooltip": "Font style for the counter number. arguments that can be given (in order): \"style weight size family\" ",
+		"group": "Test Alert"
+	},
+	"RewardTestDuration": {
+		"type": "numberbox",
+		"label": "Length time to play/display the SFX anbd Alert in Seconds",
+		"value": 5,
+		"tooltip": "Specify the number of seconds to wait before attempting to play next SFX in queue after starting to play this SFX.",
+		"group": "Test Alert"
+	},
+	"TestWSEvent": {
+		"type": "button",
+		"label":"Test WebSocket Event",
+		"tooltip": "Sends a websocket event with test data",
+		"function": "TestWSEvent",
+		"wsevent": "EVENT_NONE",
+		"group": "Test Alert"
+	},
+	"EnableDebug": {
+		"type": "checkbox",
+		"value": false,
+		"label": "Enable Debug",
+		"tooltip": "Enable or disable debug logs",
+		"group": "Debug Settings"
+	}
+}
