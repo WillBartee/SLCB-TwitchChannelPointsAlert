@@ -302,9 +302,9 @@ def SoundWorker(reward):
         DebugLog("MissingSound", reward.SFXFile)
 
     if soundFilePath is not None:
-        DebugLog(ScriptName, "PlayingSound" + reward.SFXFile + " at vol: " + str(reward.Volume) + " with delay: " + str(reward.Duration))
+        DebugLog(ScriptName, "PlayingSound " + reward.SFXFile + " at vol: " + str(reward.Volume))
         DebugLog(ScriptName, soundFilePath)
-        Parent.PlaySound(soundFilePath, volume/100.0)
+        Parent.PlaySound(soundFilePath, reward.Volume/100.0)
 
 #--------------------------
 # BuildSoundPathDict (Builds the list of available sounds and their full paths)

@@ -56,11 +56,12 @@ function onMessage(socketMessage) {
       var source = video.get(0);
       source.src = image_url;
       video.on("canplaythrough", (e) => {
+        $('video').css('visibility', 'visible');
         source.play();
         alert(eventData);
       });
       source.load();
-    } else {
+    } else if (image_url.endsWith(".gif") || image_url.endsWith(".jpg") || image_url.endsWith(".png")) {
       loadImg({ src: image_url }, function (status) {
         if (!status.err) {
           console.log("Loaded image", status);
