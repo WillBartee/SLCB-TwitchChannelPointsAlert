@@ -56,8 +56,8 @@ function onMessage(socketMessage) {
       var source = video.get(0);
       source.src = image_url;
       video.on("canplaythrough", (e) => {
-        $('video').css('visibility', 'visible');
         source.play();
+        $('video').css('visibility', 'visible');
         alert(eventData);
       });
       source.load();
